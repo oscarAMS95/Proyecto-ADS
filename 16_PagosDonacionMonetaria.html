@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forma de pago</title>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="print.js"></script>
+  <link rel="stylesheet" type="text/css" href="print.css">
+  <style type="text/css">
+    body {
+      background-color: rgb(77, 192, 77);
+    }
+
+    .text-dark {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="styleSheet3.css">
+  <!--Aqui se pone la referencia del archivo CSS-->
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <a href="1_paginaPrincipal.html">
+                <img class="img-fluid2 d-block" src="cimarron.png" width="120" height="120"> </div>
+              </a>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="">Apoyo Cimarron</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="">Universidad Autonoma de Baja California</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 my-2">
+        <center class="">
+          <h3 class="bg-light w-50">Forma de Pago</h3>
+        </center>
+        <br> </div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#f2f2f2">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 my-2">
+        <br>
+        <center>
+          <b>
+            <h2>Seleccione una forma de Pago:</h2>
+          </b>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#f2f2f2;">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card-body p-5">
+                <br>
+                <center>
+                  <img class="img-fluid" src="img/pagos.png" width="350" height="200">
+                </center>
+                <!--
+              <p class="alert alert-success">Some text success or error</p>
+              -->
+                <br>
+                <br>
+                <br>
+                <center>
+                  <b>
+                    <h3>Transferencia electronica.</h3>
+                  </b>
+                </center>
+                <center>
+                  <div class="form-group row">
+                    <label for="Facultad" class="col-sm-12 col-form-label">
+                      <p>Introduce la cantidad a donar:</p>
+                    </label>
+                    <div class="col-sm-3"> </div>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="Facultad"> </div>
+                    <div class="col-sm-3"> </div>
+                  </div>
+                </center>
+                <br>
+                <center>
+                  <br>
+                  <b>
+                    <h3>Informacion Personal:</h3>
+                  </b>
+                  <br>
+                </center>
+                <form role="form">
+                  <div class="form-group">
+                    <label for="username">
+                      <p>Nombre(s):</p>
+                    </label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-user"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" name="username" placeholder="" required=""> </div>
+                    <!-- input-group.// -->
+                  </div>
+                  <!-- form-group.// -->
+                  <div class="form-group">
+                    <label for="username">
+                      <p>Apellidos:</p>
+                    </label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-user"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" name="username" placeholder="" required=""> </div>
+                    <!-- input-group.// -->
+                  </div>
+                  <!-- form-group.// -->
+                  <div class="form-group">
+                    <label for="cardNumber">
+                      <p>Numero de tarjeta:</p>
+                    </label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-credit-card"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" name="cardNumber" placeholder="16 Digitos"> </div>
+                    <!-- input-group.// -->
+                  </div>
+                  <!-- form-group.// -->
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <label>
+                          <span class="hidden-xs">
+                            <p>Expiracion</p>
+                          </span>
+                        </label>
+                        <div class="form-inline">
+                          <select class="form-control" style="width:45%">
+                            <option>Mes</option>
+                            <option>01 - Enero</option>
+                            <option>02 - Febrero</option>
+                            <option>03 - Marzo</option>
+                            <option>04 - Abril</option>
+                            <option>05 - Mayo</option>
+                            <option>06 - Junio</option>
+                            <option>07 - Julio</option>
+                            <option>08 - Agosto</option>
+                            <option>09 - Septiembre</option>
+                            <option>10 - Octubre</option>
+                            <option>11 - Noviembre</option>
+                            <option>12 - Diciembre</option>
+                          </select>
+                          <span style="width:10%; text-align: center"> / </span>
+                          <select class="form-control" style="width:45%">
+                            <option>Año</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">
+                          <p>CVV </p>
+                          <i class="fa fa-question-circle"></i>
+                        </label>
+                        <input class="form-control" required="" type="text"> </div>
+                      <!-- form-group.// -->
+                    </div>
+                  </div>
+                  <!-- row.// -->
+                  <br>
+                  <button data-toggle="modal" data-target="#myModal" class="subscribe btn btn-primary btn-block" type="button">Realizar Donacion</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row.// -->
+      </div>
+      <div class="col-sm-6">
+        <br>
+        <br>
+        <center>
+          <img class="img-fluid" src="img/oxxo.png" width="200" height="100">
+        </center>
+        <div class="card-body p-5">
+          <form role="form">
+            <center>
+              <b>
+                <h3>Pago en Caja.</h3>
+              </b>
+            </center>
+            <center>
+              <div class="form-group row">
+                <label for="Facultad" class="col-sm-12 col-form-label">
+                  <p>Introduce la cantidad a donar:</p>
+                </label>
+                <div class="col-sm-3"> </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="Facultad"> </div>
+                <div class="col-sm-3"> </div>
+              </div>
+            </center>
+            <br>
+            <a href="recibo.html" target="_blank">​​​​​​​​​​​​​​​​​
+            <button class="subscribe btn btn-primary btn-block" type="button"> Imprimir Recibo</button>
+          </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+          </div>
+          <div class="modal-body">
+            <p align="center">Transaccion Exitosa.<br>Gracias por tu donativo!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="1_paginaPrincipalPago.html" class="btn btn1 btn-primary" style="font-size: 14px">OK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-muted bg-light">
+    <div class="container2">
+      <div class="row">
+        <div class="p-4 col-md-4">
+          <h2 class="mb-4 text-dark"></h2>
+          <p class="text-dark">Apoyo Cimarron busca el promover el altruismo y ayudar a los alumnos de la comunidad estudiantil apoyandolos ya sea de forma economica o con algun bien material que necesiten.</p>
+        </div>
+        <div class="p-4 col-md-4">
+          <h2 class="mb-4" style="color:black">Contacto</h2>
+          <p class="text-secondary">
+            <a href="tel:+246 - 542 550 5462" class="text-dark">
+              <i class="fa d-inline mr-3 text-secondary fa-phone"></i>(664)123-1234</a>
+          </p>
+          <p>
+            <a href="mailto:info@pingendo.com" class="text-dark">
+              <i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>apoyocimarron@uabc.edu.mx</a>
+          </p>
+          <p class="text-dark">
+            <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-dark" target="_blank">
+              <i class="fa d-inline mr-3 fa-map-marker text-secondary"></i>Calzada Universidad 14418, Mesa de Otay, Tijuana, &nbsp; &nbsp; &nbsp;B.C. 22390</a>
+          </p>
+        </div>
+        <div class="p-4 col-md-4">
+          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=Universidad+Autonoma+de+Baja+California%2C+Tijuana&amp;center=Universidad+Autonoma+de+Baja+California%2C+Tijuana&amp;zoom=15&amp;size=250x250&amp;sensor=false"> </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

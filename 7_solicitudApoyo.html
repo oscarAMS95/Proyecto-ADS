@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Solicitud de Alumno</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #4dc04d;
+    }
+  </style>
+  <link rel="stylesheet" href="styleSheet2.css">
+  <!--Aqui se pone la referencia del archivo CSS-->
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid2 d-block" src="cimarron.png" width="120" height="120"> </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">Apoyo Cimarrón</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">Universidad Autónoma de Baja California</h3>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 my-3">
+              <center class="">
+                <h3 class="bg-light w-50">Solicitud de Alumno</h3>
+              </center>
+              <br> </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2c col-md-2">
+              <div class="row"></div>
+              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="btn-group-vertical my-3 px-1">
+                    <a href="11_listaBeneficiariosInicio.html" class="btn btn1 btn-lg" style="font-size: 14px">Alumnos</a>
+                    <a href="#" class="btn btn2 btn-lg" style="font-size: 14px">Información</a>
+                    <a href="13_contactoAdmin.html" class="btn btn3 btn-lg" style="font-size: 14px">Contáctanos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="col-sm-8c col-md-12 bg-light">
+                <div class="row"></div>
+                <div class="col-sm-8 col-md-12">
+                  <p style="font-size:150%; text-align: center;">
+                    <br>Datos del alumno solicitante</p>
+                  <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">
+                      <br>Nombre(s)*:</label>
+                    <div class="col-10">
+                      <br>
+                      <input class="form-control" type="text" value="" id="example-text-input"> </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-2 col-form-label">Apellidos*:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="search" value="" id="example-search-input"> </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-email-input" class="col-2 col-form-label">Matricula*:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="email" value="" id="example-email-input"> </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-url-input" class="col-2 col-form-label">Facultad*:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="url" value="" id="example-url-input"> </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-tel-input" class="col-2 col-form-label">Carrera*:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="tel" value="" id="example-tel-input"> </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-password-input" class="col-2 col-form-label">Semestre*:</label>
+                    <div class="col-4">
+                      <input class="form-control" type="text" value="" id="example-password-input"> </div>
+                  </div>
+                  <hr>
+                  <p style="font-size: 150%; text-align: center;">Tipo de donativo a solicitar</p>
+                  <form class="form-inline">
+                    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                      <label class="form-check-label">
+                        <input id="isCheck" name="isCheck" class="form-check-input" type="checkbox">Re/Inscripcion &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                    </div>
+                    <label for="example-text-input" class="col-1 col-form-label">&nbsp;Monto:</label>
+                    <label class="sr-only" for="inlineFormInput"></label>
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-2 mx-5" id="inlineFormInput" disabled=""> </form>
+                  <form class="form-inline">
+                    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                      <label class="form-check-label">
+                        <input id="isCheck2" name="isCheck2" class="form-check-input" type="checkbox">Transporte &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    </div>
+                    <label for="example-text-input" class="col-2 col-form-label">&nbsp; &nbsp; Monto:</label>
+                    <label class="sr-only" for="inlineFormInput"></label>
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-2 mx-4" id="inlineFormInput2" disabled=""> </form>
+                  <form class="form-inline">
+                    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                      <label class="form-check-label">
+                        <input id="isCheck3" name="isCheck3" class="form-check-input" type="checkbox">Alimenticio</label>
+                    </div>
+                    <label for="example-text-input" class="col-3 col-form-label mx-0">&nbsp; &nbsp; &nbsp; Monto:</label>
+                    <label class="sr-only" for="inlineFormInput"></label>
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput3" disabled=""> </form>
+                  <hr>
+                  <form class="form-inline">
+                    <div class="mx-auto">
+                        <a href="3_paginaPrincipalIniSesMaterialSolicitud.html" data-toggle="modal" data-target="#myModal" class="btn btn-primary" role="button">Enviar Solicitud</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2d col-md-2">
+              <div class="row"></div>
+              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <div class="btn-group-vertical my-3">
+                    <a href="8_Portal_de_donaciones_materialesHechoAlumno.html" class="btn btn4 btn-lg" style="font-size: 14px">Portal de
+                      <br>donaciones
+                      <br>materiales</a>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="3_paginaPrincipalIniSesMaterial.html">Inicio</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Perfil</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="9_darDeBaja.html">Darse de Baja</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              
+            </div>
+            <div class="modal-body">
+              <p align="center">Tu solicitud ha sido enviada para su evaluacion.<br>Una vez aceptada podras hacer uso del sistema y continuar con el proceso de solicitar un donativo.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="3_paginaPrincipalIniSesMaterialSolicitud.html" class="btn btn1 btn-primary" style="font-size: 14px">OK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('#isCheck').change(function(){
+            $("#inlineFormInput").prop("disabled",!$(this).is(':checked'));
+          });
+
+          $('#isCheck2').change(function(){
+            $("#inlineFormInput2").prop("disabled",!$(this).is(':checked'));
+          });
+
+          $('#isCheck3').change(function(){
+            $("#inlineFormInput3").prop("disabled",!$(this).is(':checked'));
+          });
+    </script>
+    <script>
+      document.getElementById('noempleo').onclick = function(){
+            document.getElementById('noTrabaja').disabled = true;
+            document.getElementById('noTrabaja2').disabled = true;
+            document.getElementById('noTrabaja3').disabled = true;
+            document.getElementById('noTrabaja4').disabled = true;
+            document.getElementById('noTrabaja5').disabled = true;
+          }
+          document.getElementById('empleo').onclick = function(){
+            document.getElementById('noTrabaja').disabled = false;
+            document.getElementById('noTrabaja2').disabled = false;
+            document.getElementById('noTrabaja3').disabled = false;
+            document.getElementById('noTrabaja4').disabled = false;
+            document.getElementById('noTrabaja5').disabled = false;
+          }
+    </script>
+  </div>
+</body>
+
+</html>

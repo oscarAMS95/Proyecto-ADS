@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Donar un articulo</title>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="windowMsg.js"></script>
+  <style type="text/css">
+    body {
+      background-color: rgb(77, 192, 77);
+    }
+
+    .text {
+      font-size: 20px;
+    }
+    /* The radio */
+
+    .radio {
+      display: block;
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+    /* Hide the browser's default radio button */
+
+    .radio input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    /* Create a custom radio button */
+
+    .checkround {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border-color: #f8204f;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 50%;
+    }
+    /* When the radio button is checked, add a blue background */
+
+    .radio input:checked~.checkround {
+      background-color: #fff;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+
+    .checkround:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+
+    .radio input:checked~.checkround:after {
+      display: block;
+    }
+    /* Style the indicator (dot/circle) */
+
+    .radio .checkround:after {
+      left: 2px;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #f8204f;
+    }
+    /* The check */
+
+    .check {
+      display: block;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      padding-right: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    /* Hide the browser's default checkbox */
+
+    .check input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    /* Create a custom checkbox */
+
+    .checkmark {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      background-color: #fff;
+      border-color: #f8204f;
+      border-style: solid;
+      border-width: 2px;
+    }
+    /* When the checkbox is checked, add a blue background */
+
+    .check input:checked~.checkmark {
+      background-color: #fff;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    /* Show the checkmark when checked */
+
+    .check input:checked~.checkmark:after {
+      display: block;
+    }
+    /* Style the checkmark/indicator */
+
+    .check .checkmark:after {
+      left: 5px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+      border: solid;
+      border-color: #f8204f;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .cust-btn {
+      margin-bottom: 10px;
+      background-color: #f8204f;
+      border-width: 2px;
+      border-color: #f8204f;
+      color: #fff;
+    }
+
+    .cust-btn:hover {
+      border-color: #f8204f;
+      background-color: #fff;
+      color: #f8204f;
+      border-radius: 20px;
+      transform-style: 2s;
+    }
+
+    .col-sm-8 {
+      margin-bottom: 30px;
+      border-radius: 10px;
+      height: 460px;
+    }
+
+    .container1 {
+      border-radius: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="styleSheet.css">
+  <!--Aqui se pone la referencia del archivo CSS-->
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <a href="1_paginaPrincipal.html">
+                <img class="img-fluid2 d-block" src="cimarron.png" width="120" height="120"> </div>
+              </a>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="">Apoyo Cimarron</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="">Universidad Autonoma de Baja California</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 my-2">
+        <center class="">
+          <h3 class="bg-light w-50">Dona un articulo</h3>
+        </center>
+        <br> </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2c col-md-2">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group-vertical my-5">
+              <a href="11_listaBeneficiarios.html" class="btn btn1 btn-lg" style="font-size: 14px">Alumnos</a>
+              <a href="#" class="btn btn2 btn-lg" style="font-size: 14px">Información</a>
+              <a href="13_contactoAdmin.html" class="btn btn3 btn-lg" style="font-size: 14px">Contactanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-sm-8 bg-light col-md-12">
+              <div class="col-sm-8 bg-light col-md-12">
+                <div class="row bg-light"></div>
+                <div class="row bg-light">
+                  <div class="col-md-12 bg-light">
+                    <label for="inputdefault">
+                      <br><br>Nombre del articulo:</label>
+                    <input class="form-control w-75 my-1" id="inputdefault" type="text"> </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12 bg-light"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12 bg-light">
+                        <div class="form-group">
+                          <label for="comment"><br><br>Descripcion del articulo:</label>
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="bg-light col-md-12">
+                        <input id="button-8" class="_button-7 w-100" type="file" name="fil" value="subir archivo">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12 bg-light"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4 bg-light"></div>
+                      <div class="col-md-4 bg-light">
+                        <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-block my-3 btn-lg" href="#">Publicar Donacion</a>
+                      </div>
+                      <div class="col-md-4 bg-light"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2d col-md-2">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group-vertical my-5">
+              <a href="8_Portal_de_donaciones_materiales.html" class="btn btn4 btn-lg" style="font-size: 14px">Portal de
+                <br>donaciones
+                <br>materiales</a>
+              <a href="1_paginaPrincipalPago.html" class="btn btn6 btn-lg" style="font-size: 14px">Pagina
+                <br>Principal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-muted bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="p-4 col-md-4">
+          <h2 class="mb-4 text-dark"></h2>
+          <p class="text-dark">Apoyo Cimarron busca el promover el altruismo y ayudar a los alumnos de la comunidad estudiantil apoyandolos ya sea de forma economica o con algun bien material que necesiten.</p>
+        </div>
+        <div class="p-4 col-md-4">
+          <h2 class="mb-4 text-dark">Contacto</h2>
+          <p class="text-secondary">
+            <a href="tel:+246 - 542 550 5462" class="text-dark">
+              <i class="fa d-inline mr-3 text-secondary fa-phone"></i>(664)123-1234</a>
+          </p>
+          <p>
+            <a href="mailto:info@pingendo.com" class="text-dark">
+              <i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>apoyocimarron@uabc.edu.mx</a>
+          </p>
+          <p class="text-dark">
+            <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-dark" target="_blank">
+              <i class="fa d-inline mr-3 fa-map-marker text-secondary"></i>Calzada Universidad 14418, Mesa de Otay, Tijuana, &nbsp; &nbsp; &nbsp;B.C. 22390</a>
+          </p>
+        </div>
+        <div class="p-4 col-md-4">
+          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=Universidad+Autonoma+de+Baja+California%2C+Tijuana&amp;center=Universidad+Autonoma+de+Baja+California%2C+Tijuana&amp;zoom=15&amp;size=250x250&amp;sensor=false"> </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+          </div>
+          <div class="modal-body">
+            <p align="center">Tu donativo ha sido realizado satisfactoriamente!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="8_Portal_de_donaciones_materialesHecho.html" class="btn btn1 btn-primary" style="font-size: 14px">OK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
